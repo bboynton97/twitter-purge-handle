@@ -19,8 +19,9 @@ A Python script that checks if a Twitter handle becomes available and sends an e
    ```
 
 2. Install the required dependencies:
-
-`pip install -r requirements.txt`
+```shell
+pip install -r requirements.txt
+```
 
 3. Set up your Twitter API credentials and email configuration:
     - Obtain Twitter API credentials from the Twitter Developer Portal.
@@ -31,7 +32,9 @@ A Python script that checks if a Twitter handle becomes available and sends an e
    - Modify the email subject and body in the send_email_notification function to suit your needs.
 
 5. Run the script:
-`python twitter_handle_checker.py`
+```shell
+python twitter_handle_checker.py
+```
 
 The script will continuously check if the handle becomes available and send an email notification when it does.
 

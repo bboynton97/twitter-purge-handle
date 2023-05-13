@@ -4,6 +4,12 @@
 
 A Python script that checks if a Twitter handle becomes available and sends an email notification when it does. This open-source project utilizes the Tweepy library for Twitter API interaction and the smtplib library for sending email notifications.
 
+## Don't want to implement all of this?
+We are building a hosted version that will do this for you at < url >.
+
+## Approaches
+There are two ways to use this repo. If you can get access to the Twitter v1.1 API, use that. I was not able to get access, so I created an additional workaround method.
+
 ## Features
 
 - Monitors a specified Twitter handle to check if it becomes available.
@@ -23,9 +29,13 @@ A Python script that checks if a Twitter handle becomes available and sends an e
 pip install -r requirements.txt
 ```
 
+### Twitter API v1.1 Approach
+
 3. Set up your Twitter API credentials and email configuration:
     - Obtain Twitter API credentials from the Twitter Developer Portal.
     - Configure the email settings in the script.
+
+### Selenium Remote Browser Approach
 
 4. Customize the script:
    - Specify the Twitter handle you want to monitor in the target_handle variable.
@@ -34,6 +44,12 @@ pip install -r requirements.txt
 5. Run the script:
 ```shell
 python twitter_handle_checker.py
+```
+
+or 
+
+```shell
+python twitter_handle_checker_selenium.py
 ```
 
 The script will continuously check if the handle becomes available and send an email notification when it does.
